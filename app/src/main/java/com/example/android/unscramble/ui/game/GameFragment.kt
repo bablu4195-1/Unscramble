@@ -35,15 +35,12 @@ class GameFragment : Fragment() {
 
     private val viewModel: GameViewModel by viewModels()
 
-
-
     // Binding object instance with access to the views in the game_fragment.xml layout
     private lateinit var binding: GameFragmentBinding
 
     // Create a ViewModel the first time the fragment is created.
     // If the fragment is re-created, it receives the same GameViewModel instance created by the
     // first fragment
-
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
@@ -110,11 +107,6 @@ class GameFragment : Fragment() {
             showFinalScoreDialog()
         }
     }
-
-    /*
-     * Gets a random word for the list of words and shuffles the letters in it.
-     */
-
 
     /*
      * Re-initializes the data in the ViewModel and updates the views with the new data, to
